@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    --primary-color:#183686;
+    --secondary-color:#4d8cc7;
+}
+
+body{
+    background-color: #183586ea;
+}
+
+
+#playerDetailtext{
+    margin-top: 100px;
+    padding-left: 8%;
+    font-weight: 600;
+    font-size: 42px;
+    color: white;
+}
+
+#mainPageDetailsPlayer{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details-page-wrapper{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    box-shadow: 0 0 12px rgb(78, 78, 78);
+    background-color: white;
+}
+
+.left-div-details{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+.left-div-details img{
+    width: 100%;
+}
+
+.right-div-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 12px;
+}
+.right-div-details h3{
+    font-weight: 600;
+}
+
+.right-div-details span{
+    font-weight: 400;
+}
+
+#playerName{
+    font-size: 42px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+@media(min-width:768px){
+
+    #playerDetailtext{
+        margin-top: 150px;
+        padding: 0 21%;
+    }
+
+    #mainPageDetailsPlayer{
+        margin-top: 30px;
+    }
+    #details-page-wrapper{
+        flex-direction: row;
+        width: 100%;
+        max-width: 600px;
+    }
+    .left-div-details{
+        width: 30%;
+    }
+}
+
+@media(min-width:1200px){
+
+    #playerDetailtext{
+        margin-top: 150px;
+        padding: 0 24%;
+    }
+
+    #mainPageDetailsPlayer{
+        margin-top: 30px;
+       
+    }
+    #details-page-wrapper{
+        flex-direction: row;
+        width: 100%;
+        max-width: 700px;
+    }
+    .left-div-details{
+        width: 40%;
+    }
+}

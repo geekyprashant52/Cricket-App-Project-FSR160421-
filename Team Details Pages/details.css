@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    /* background-color: #f8bf12d0; */
+    background-color: #183586ea;
+}
+
+#teamDetailsText{
+    margin-top: 100px;
+    padding: 0 8%;
+    font-weight: 600;
+    font-size: 42px;
+    color: white;
+}
+
+#mainPageDetails{
+    width: 100%;
+    padding: 0 8%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details-page-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    box-shadow: 0 0 12px rgb(78, 78, 78);
+    background-color: white;
+}
+
+.left-div-details {
+    width: 100%;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+.left-div-details img {
+    width: 100%;
+}
+
+.right-div-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 12px;
+}
+
+.right-div-details h3{
+    font-weight: 600;
+}
+
+.right-div-details span{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+#teamName{
+    font-size: 42px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+@media(min-width:768px){
+    
+    #teamDetailsText{
+        margin-top: 150px;
+        padding: 0 15%;
+    }
+
+    #mainPageDetails{
+        margin-top: 30px;
+        padding: 0 15%;
+    }
+    #details-page-wrapper{
+        flex-direction: row;
+        width: 100%;
+        max-width: 600px;
+    }
+    .left-div-details{
+        width: 40%;
+    }
+}
+
+@media(min-width:1200px){
+
+    #teamDetailsText{
+        margin-top: 150px;
+        padding: 0 24%;
+    }
+    #mainPageDetails{
+        width: 100%;
+        margin-top: 30px;
+        padding: 0 20%;
+    }
+    #details-page-wrapper{
+        flex-direction: row;
+        width: 100%;
+        max-width: 700px;
+    }
+    .left-div-details{
+        width: 40%;
+    }
+}

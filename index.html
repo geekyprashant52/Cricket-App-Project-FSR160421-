@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket App(FSR160421)</title>
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link rel="stylesheet" href="./Base File/base.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./index.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+    <header id="header-cricket" class="header-fixed">
+        <div>
+            <div id="left-div-header">
+                <img src="./assets/images/logo_ipl.png" alt="logo">
+            </div>
+        </div>
+        <div>
+            <button class="btn-style-all" id="addNewPlayer-Btn">Add New Player & Team</button>
+        </div>
+    </header>
+    <main>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <div id="closeIconWrapper">
+                    <i class="far fa-times-circle" id="closeIcon"></i>
+                </div>
+                <h3 id="addPlayerText">Add Player</h3>
+                <div id="formWrapper-popup">
+                    <p>Player Name</p>
+                    <input class="border-blue" id="popup-player-name" type="text">
+                    <p>Choose Avatar</p>
+                    <div class="small-images-wrapper-popup" id="avatarImagesWrapper">
+                        <!-- <div>
+                            <img class="small-images-popup-avatar"
+                                src="https://image.flaticon.com/icons/png/512/168/168721.png" alt="img1">
+                        </div>-->
+
+                    </div>
+                    <p>Price</p>
+                    <input class="border-blue" id="popup-price-name" type="text">
+
+                    <p>Playing Status</p>
+                    <select class="border-blue" name="playingstatus" id="playingstatus">
+                        <option value="Select">--Select--</option>
+                        <option value="playing">Playing</option>
+                        <option value="not-playing">Not-Playing</option>
+                    </select>
+                    <p>Role</p>
+                    <select class="border-blue" name="role" id="role">
+                        <option value="Select">--Select--</option>
+                        <option value="Batsman">Batsman</option>
+                        <option value="bowler">Bowler</option>
+                        <option value="allrounder">All-rounder</option>
+                        <option value="Wicketkeeper">Wicketkeeper batsman</option>
+                    </select>
+                    <h3 id="addPlayerText">Add Team</h3>
+                    <p>Team Name</p>
+                    <input class="border-blue" id="popup-team-name" type="text">
+                    <p>Choose Team Logo</p>
+                    <div class="small-images-wrapper-popup" id="teamImagesWrapper">
+                        <!-- <div>
+                            <img class="small-images-popup-team"
+                                src="https://cdn3.vectorstock.com/i/thumb-large/68/47/cricket-championship-logo-vector-20066847.jpg"
+                                alt="img1">
+                        </div>-->
+
+                    </div>
+                    <p>Player-count</p>
+                    <input class="border-blue" id="popup-player-count" type="number">
+                    <p>Top-Batsman</p>
+                    <input class="border-blue" id="popup-topBatsman-name" type="text">
+                    <p>Top-Bowler</p>
+                    <input class="border-blue" id="popup-topBowler-name" type="text">
+
+
+                    <p id="popupalert">Please Fill All Details!</p>
+                    <Button id="add-player-btn-popup">Add Player & Team</Button>
+                </div>
+            </div>
+        </div>
+
+        <section id="mainPage">
+
+            <h1 id="homepageHeading">Welcome To Cricket App</h1>
+
+            <div id="searchbar-mainpage">
+                <input id="serchBox" type="text" placeholder="enter team name">
+                <button class="btn-style-all" id="searchBtn">Search</button>
+                <button class="btn-style-all" id="clearBtn">Clear</button>
+            </div>
+            <div id="available-teams-text-wrapper">
+                <h3 id="available-teams-text">Available Teams</h3>
+            </div>
+
+            <div id="team-cards-wrapper">
+
+                <!-- <div class="team-cards">
+                    <div class="team-card-left-div">
+                        <img src="https://www.pngall.com/wp-content/uploads/2017/04/Mumbai-Indians-Logo-PNG.png"
+                            alt="logo">
+                    </div>
+                    <div class="team-card-right-div">
+                        <h3><span>Mumbai Indians</span> </h3>
+                        <h3>Championship won: <span>3</span> </h3>
+                    </div>
+                </div> -->
+            </div>
+            <div id="available-teams-text-wrapper">
+                <h3 id="available-teams-text">Available Players</h3>
+            </div>
+            <div id="player-cards-wrapper">
+                <!-- <div class="player-cards">
+                    <div class="left-div-cards">
+                        <img src="https://static.iplt20.com/players/210/107.png" alt="hardik-pandya">
+                    </div>
+                    <div class="right-div-cards">
+                        <h3>Name: <span>Hardik Pandya</span> </h3>
+                        <h3>Team: <span>MI</span> </h3>
+                        <h3>Price: <span>6.67cr</span> </h3>
+                        <h3>Status: <span>Batting</span> </h3>
+                        <h3>Role: <span>Batsman</span> </h3>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+    </main>
+
+    <img id="edyoda-projects-logo" src="./assets/images/edyoda-logo.png" alt="EdYoda Projects Logo" />
+    <footer>
+
+    </footer>
+</body>
+
+</html>
